@@ -1,0 +1,130 @@
+class - 1
+==========
+
+    -> AWS - Amazon Web Services
+
+        -> Cloud Computing 
+
+            -> Any Application has "DATA"
+
+                -> Data ?? 
+
+                    -> Data is in Server (Database Server, Web Server, App Server etc)
+
+                        -> Server ?? 
+
+                            -> Servers are in "Datacenters"
+
+    
+    -> Data Center 
+
+        -> A data center is a building, a dedicated space within a building, 
+        or a group of buildings used to house computer systems and 
+        associated components, such as telecommunications and storage systems.
+
+        -> Physical Datacenters are Expensive & Hard To Maintain 
+
+        -> https://datacenters.microsoft.com/wp-content/uploads/2025/11/OMB-Datacenter-11_11-Hero.jpg
+
+    
+    -> Cloud Computing 
+
+        -> ‘The Cloud’ can also refer to Cloud computing is the 
+        "on-demand" availability of compute power, database storage, 
+        applications, and other IT resources through a cloud services platform 
+        (AWS/AZURE/GCP/Oracle etc) via the "internet" with "pay-as-you-go" pricing.
+
+        -> Cloud Computing is very similar to Online Ride Services 
+
+    
+    -> For Next month we have AWS Course and you need to reach out to Institute (5 kms away)
+
+        -> Buy a bike (1 Lakh For Bike - Petrol - Service - Insurance Charges)  
+
+        -> Renting a bike (on-demand book bike - pay-as-you-go 5 kms - internet - ola, rapido etc)
+
+
+    -> Cloud Offerings 
+
+        -> Cloud offerings provide on-demand access to 
+        computing, storage, and software resources over the internet.
+
+            -> IaaS (Infrastructure as a Service)
+
+            -> PaaS (Platform as a Service)
+
+            -> SaaS (Software as a Service)
+
+        -> NOTE: Similar to Online Ride Offerings(Rapido's) 
+        Scooty, Bikes, Autos, Hatchback, Sedan, SUV etc 
+
+        
+        -> IaaS (Infrastructure as a Service)
+
+            -> Provides raw computing infrastructure virtual machines, servers, storage, and networking. 
+            You manage the operating system and applications.
+
+            -> https://miro.medium.com/v2/resize:fit:1400/1*VIzchB0D3t1awTzj3sfe1g.png
+
+            -> Server For Myntra Application 
+
+                -> Hardware will be provided and managed by vendor 
+
+                    -> 4 CPU's - 16 GB RAM - 500 GB SSD - Networking 
+                
+                -> Customer(You) need to manage all below 
+                    
+                    -> Linux Ubuntu Operating System > Tomcat > Java Runtime > Database Server (MySQL) > Myntra App 
+
+                -> Examples: AWS EC2 - AWS VPC - AWS EBS 
+
+
+        -> PaaS (Platform as a Service)     
+
+            -> Delivers a framework for "developers" to build, test, and 
+            deploy software without managing the underlying hardware.
+
+            -> Server For Myntra Application 
+
+                -> Hardware & Platform will be provided and managed by vendor 
+
+                        -> 4 CPU's - 16 GB RAM - 500 GB SSD - Networking - Linux Ubuntu Operating System > Tomcat > Java Runtime > Database Server (MySQL)
+                    
+                    -> Customer(You) need to manage all below 
+                        
+                        -> Myntra App 
+
+                    -> Examples: AWS Elastic Beanstalk - AWS RDS - AWS EKS 
+
+
+        -> SaaS (Software as a Service)
+
+            ->  Fully functional, ready-to-use software applications 
+            accessed via a web browser (e.g., Salesforce, Microsoft 365, Google Workspace).
+                    
+            -> Server For Myntra Application 
+
+                -> Hardware & Platform & Software will be provided and managed by vendor 
+
+                        -> 4 CPU's - 16 GB RAM - 500 GB SSD - Networking - Linux Ubuntu Operating System > Tomcat > Java Runtime > Database Server (MySQL) > Your Application 
+                    
+                    -> Customer(You) need to manage all below 
+                        
+                        -> NOTHING 
+
+                    -> Examples: AWS Chime(Online Meetings, Video Conference) - 
+                    AWS Workspaces(Desktop As Service) - AWS Connect(Contact Center Service)
+
+        
+        -> Customer-1: Needs Only Hardware i.e Only IaaS
+
+        -> Customer-2: Needs Hardware + Platform i.e IaaS + PaaS 
+
+        -> Customer-3: Needs Direct Application i.e SaaS 
+
+
+    -> IaaS: Rent Infrastructure - You Manage OS, Middleware & Apps - AWS EC2, AWS VPC, AWS EBS
+
+    -> PaaS: Build & Deploy Apps - You Manage Apps - AWS Elastic Beanstalk - AWS RDS, AWS EKS 
+
+    -> SaaS: Use Apps - vendor manages everything - AWS Chime - AWS Connect - AWS Workspaces
