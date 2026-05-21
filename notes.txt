@@ -128,3 +128,97 @@ class - 1
     -> PaaS: Build & Deploy Apps - You Manage Apps - AWS Elastic Beanstalk - AWS RDS, AWS EKS 
 
     -> SaaS: Use Apps - vendor manages everything - AWS Chime - AWS Connect - AWS Workspaces
+
+
+class - 2
+==========
+
+    -> Infrastructure 
+
+        -> Traditional Approach (Setting Up Application Infrastructure On Physical Datacenter)
+
+        -> An Ecommerce Application like Myntra (https://www.myntra.com/) 
+        requires following Infrastructure components
+
+            -> Servers 
+                +
+            -> Storage 
+                +
+            -> Databases        ------> Myntra (https://www.myntra.com/)      
+                +
+            -> Networking 
+                +
+            -> Security 
+                +
+            -> etc 
+
+
+    
+        -> New Approach (Setting Up Application Infrastructure On Cloud Datacenter - AWS)
+
+        -> An Ecommerce Application like Myntra (https://www.myntra.com/) 
+        requires following Infrastructure components On AWS Cloud 
+
+            -> Servers      -   AWS EC2 
+                +                  +
+            -> Storage      -   AWS S3
+                +                  +
+            -> Databases    -   AWS RDS        ------> Myntra (https://www.myntra.com/)      
+                +                  +
+            -> Networking   -   AWS VPC 
+                +                  +
+            -> Security     -   AWS IAM 
+                +                  +
+            -> etc          -   AWS etc 
+
+        
+        -> NOTE: Real world production setup for an web application on AWS 
+        https://media.licdn.com/dms/image/v2/D4D12AQFI8sqvP4xFFQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700537758681?e=2147483647&v=beta&t=zE97TFGw5FQJEjUksqx7SohNsqqV57-IYQ_pj7K2M2U
+
+        -> GOAL 1: To learn about the individual AWS Services and Do implementations 
+
+        -> GOAL 2: Once the Application is built using AWS Services, the application
+        should have following characteristics (4 Pillars Of Cloud) 
+
+            -> High Availability
+
+                -> High Availability in AWS ensures your applications are continuously 
+                accessible and operational (24 X 7)
+
+                -> https://www.pan.utiitsl.com/panonline_ipg/forms/csfPan.html/csfPreForm
+
+                -> https://drive.google.com/file/d/16O-aDK-g_CCJpWoyvho79f_H2SUplCT2/view?usp=sharing
+
+            
+            -> Fault Tolerance 
+
+                -> Fault Tolerance in AWS refers to the ability of a system to continue 
+                operating without interruption in the event of hardware failures 
+
+                -> Fault Tolerance is associated with Self Healing 
+
+                -> https://media.licdn.com/dms/image/v2/D5612AQEAzCREjM2taA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1725775705951?e=2147483647&v=beta&t=KvlTnTdCqnEQHIve0aGoksUSxAG69UalK3GLGcDgUso
+
+                -> https://assets.enterprisestorageforum.com/uploads/2021/02/understanding-fault-tolerance-securing-your-system_6019c7b9d29a4.png
+
+            
+            -> Scalability 
+
+                -> Scalability in AWS refers to the ability of a system to handle 
+                increasing workloads and accommodate according to growing demands.
+
+                -> https://steadybit.com/wp-content/uploads/2025/09/validate-aws-ecs-auto-scaling-comp.png
+
+                -> Horizontal Scaling & Vertical Scaling 
+
+                -> https://miro.medium.com/v2/resize:fit:1400/1*6QXIzkckOcx2eXo9uEhWZw.png 
+
+            
+            -> Security
+
+                -> Security in AWS refers to the measures taken to protect cloud resources
+                and applications from Unauthorized Access. 
+
+                -> Account Level: https://miro.medium.com/v2/resize:fit:1200/1*CgfJAcRlay0O9amULak-fw.png
+
+                -> Application Level(from internet): https://miro.medium.com/v2/1*pwngjY9h-qKhQ4rUG8oR4Q.png
