@@ -222,3 +222,85 @@ class - 2
                 -> Account Level: https://miro.medium.com/v2/resize:fit:1200/1*CgfJAcRlay0O9amULak-fw.png
 
                 -> Application Level(from internet): https://miro.medium.com/v2/1*pwngjY9h-qKhQ4rUG8oR4Q.png
+
+
+class - 3
+==========
+
+
+    -> Create AWS Free Tier Account which is free for 6 Months 
+
+        -> Email 
+        -> Mobile Number
+        -> Card / UPI 
+        -> PAN Card 
+
+        -> NOTE: Initially AWS will charge INR 2 for bank account working status 
+
+
+    -> Infrastructure As A Service - IaaS 
+
+    -> AWS Global Infrastructure 
+
+        -> https://aws.amazon.com/about-aws/global-infrastructure/
+
+        -> Amazon Cloud Computing resources (servers, storage, databases etc) 
+        are available across the world. 
+
+        -> In simple terms Amazon Data Centers are available in different geographical locations.
+
+        -> The AWS Cloud spans "123 Availability Zones" within "39 Geographic Regions", 
+        with announced plans for 7 more Availability Zones and 2 more AWS Regions in the 
+        Kingdom of Saudi Arabia, and Chile.
+
+        -> In terms of AWS, infrastructure is made up of 
+
+            -> Regions 
+
+            -> Availability Zones 
+
+        
+        -> Regions
+
+            -> Regions are designed to service AWS customers (or your users) 
+            that are located closest to a region.
+
+            -> Availability of services are different for different AWS Regions 
+
+            -> Price Varies from Region to Region 
+
+        
+        -> Availability Zones (AZ)
+
+            -> Availability zone is where the actual data centers are located
+
+            -> Within a Region, there can be multiple Availability zones
+
+            -> Each AZ has independent Power Supply, Networking, Cooling System, Physical Security.
+
+            -> https://www.researchgate.net/profile/Ivan_Beres/publication/360541079/figure/fig1/AS:1154856056291328@1652350548135/AWS-Regions-and-Availability-Zones-Scott-nd.ppm
+
+
+        -> Edge Locations 
+
+            -> NOTE: To understand about Edge Locations, we need to know about 
+            CDN - Content Delivery Network 
+
+            -> CDN - A Content Delivery Network (CDN) is a geographically distributed 
+            group of servers that speeds up internet content delivery by 
+            caching assets closer to users. 
+            By reducing the physical distance data must travel, CDNs minimize latency.
+
+            -> https://www.muvi.com/wp-content/uploads/2017/07/CDN_Muvi.png
+
+            -> In terms of AWS Edge Server is Edge Location 
+
+                -> 750+ CloudFront POPs and 15 Regional edge caches
+
+            
+            -> An AWS Edge Location is a data center in the AWS global network used by services 
+            like CloudFront, Global Accelerator, and Lambda@Edge to store cached content 
+            (images, videos) and process requests closer to end-users, 
+            drastically reducing latency by serving data from the nearest point of presence(pop) 
+            rather than a distant main AWS Region. 
+            They act as caching warehouses, improving performance for websites.
