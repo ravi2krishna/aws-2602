@@ -304,3 +304,76 @@ class - 3
             drastically reducing latency by serving data from the nearest point of presence(pop) 
             rather than a distant main AWS Region. 
             They act as caching warehouses, improving performance for websites.
+
+
+class - 4
+==========
+
+    -> VPC (Virtual Private Cloud)
+
+        -> A Virtual Private Cloud (VPC) is a logically isolated, private network environment 
+        within a public cloud. VPC gives organizations total control over networking components
+        like IP addresses, subnets, route tables, and gateways—while benefiting from the 
+        scalability and cost-efficiency of shared public cloud infrastructure.
+
+        -> https://www.akamai.com/site/en/images/article/2023/akamai-public-private-cloud.png
+
+        -> https://images.netcomlearning.com/cms/images/virtual-private-cloud.jpg
+
+        -> NOTE: Having VPC is similar to having your own data center inside AWS. 
+
+        -> VPC is a service that lets customers(IBM) provision a logically isolated 
+        section of the AWS Cloud where you can launch AWS resources(Servers) 
+        in a VIRTUAL NETWORK that you define.
+
+        -> Most Popular Applications
+        
+            -> https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites
+
+        -> VPC Architecture Reference 
+
+            -> https://media.licdn.com/dms/image/v2/D4D12AQFI8sqvP4xFFQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700537758681?e=2147483647&v=beta&t=zE97TFGw5FQJEjUksqx7SohNsqqV57-IYQ_pj7K2M2U
+
+        -> NOTE: VPC forms the backbone for Infrastructure to build any Application on cloud 
+
+    
+    -> VPC Components
+
+        -> Subnets
+        
+            -> Segments of a VPC's IP address range that group resources based on 
+            security and connectivity needs (e.g., public subnets for websites, 
+            private subnets for databases).
+
+            -> A subnet or sub network is an logical subdivision of an Amazon Virtual Private Cloud (VPC)
+
+        -> Route Tables
+        
+            -> Rules that dictate where network traffic is directed.
+
+            -> A route table contains a set of rules called routes, 
+            that are used to determine where network traffic is directed.
+
+        -> Gateways
+        
+            -> Connection points that bridge your VPC to the external internet or 
+            on-premises data centers.
+
+            -> Internet Gateway
+
+                -> An Internet Gateway must be attached to a VPC if the resources inside the VPC 
+                need to connect to resources via the open internet.
+
+        
+        -> Network ACLs (NACL)
+        
+            -> Virtual firewalls that control inbound and outbound traffic at the subnet level.
+
+        -> Security Groups  
+        
+            -> Virtual firewalls that control inbound and outbound traffic at the instance level.
+
+            
+
+
+        
