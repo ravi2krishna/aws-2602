@@ -374,6 +374,47 @@ class - 4
             -> Virtual firewalls that control inbound and outbound traffic at the instance level.
 
             
+class - 5
+==========
+
+    -> VPC Workflow 
+
+        -> "To enable access to or from the internet to an instance(server) in a VPC subnet, 
+        you must attach an Internet gateway to your VPC, 
+        ensure that your subnet route table points to the Internet gateway and 
+        ensure that instance has a public IP address, 
+        and ensure that your network access control and security group rules 
+        allow the relevant traffic to your instance" -- AWS
+
+    -> Easy way to understand VPC Workflow 
+
+        -> https://drive.google.com/file/d/1CxWWefIo_W3uhO9ccGYS-m_Gc0qXPKV4/view?usp=sharing   
+
+        -> https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/articles/aws-vpc-explained/en/resources/14fig1-1527438336542.png
+
+    -> Subnetting 
+
+        -> Subnetting is the practice of dividing a network into two or more smaller networks.
+
+        -> When you create a VPC, you must specify a CIDR (Classless Inter Domain Routing) 
+        block for the VPC.
+
+        -> The allowed block size is between a /16 netmask (65,536 IP addresses) and 
+        /28 netmask (16 IP addresses).
+
+        -> NOTE: AWS Recommends to create VPC CIDR with /16 for future purpose 
+
+        -> NOTE: In Every Subnet, aws has some reserved IP's 
+
+            -> The first four IP addresses and the last IP address in each subnet CIDR block 
+            are not available for you to use, and cannot be assigned to an instance.
+
+                10.0.0.0: Network address.
+                10.0.0.1: Reserved by AWS for the VPC router.
+                10.0.0.2: Reserved by AWS for Amazon DNS server.
+                10.0.0.3: Reserved by AWS for future use.
+                10.0.0.255: Network broadcast address.
 
 
-        
+
+
