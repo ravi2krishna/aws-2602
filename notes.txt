@@ -416,5 +416,11 @@ class - 5
                 10.0.0.255: Network broadcast address.
 
 
+class - 6
+==========
+
+    -> VPC Workflow Implementation 
+
+    
 
 
