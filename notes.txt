@@ -422,5 +422,57 @@ class - 6
     -> VPC Workflow Implementation 
 
     
+class - 7
+==========
 
+    -> Requirement Given by EDIFY
 
+        -> Edify is going to setup the Any App environment i.e servers on AWS, 
+        their clients are from XYZ (REGION) Location
+
+        -> They are gonna host Servers
+
+        -> These servers are grouped into three subnets each with 4k servers
+
+        -> First Subnet is for web servers, around 4k
+
+        -> Second Subnet is for application servers, around 4k
+
+        -> Third Subnet is for database servers, around 4k
+
+        -> In the future, they might add more number of subnets i.e 
+        cache subnets, load balancer subnet etc
+
+        -> The web servers and app servers needs to be communicated from internet
+
+        -> The database servers needs to be communicated only from App Servers, 
+        but not from internet
+        
+        -> Coming to security of Web Servers, they should have only 
+            -> SSH traffic enabled for administration from internet
+            -> HTTP traffic for clients from internet
+
+        -> Coming to security of App Servers, they should have only 
+            -> SSH traffic enabled for administration from internet
+            -> HTTP traffic port 8080 for clients from internet
+
+        -> Coming to security of Database Servers, they should have only 
+            -> SSH traffic enabled from web servers only
+            -> Postgres Database Traffic Allowed from App Servers
+
+    -> Subnetting Of VPC 
+
+        -> Dividing VPC into three subnet, having 4k in each subnet
+
+        -> Allowed Subnetting size is /16 to /28 
+
+            -> /16 - 65536
+            -> /17
+            -> /18
+            -> .
+            -> .
+            -> /28 - 16
+
+            -> https://mattrickard.com/static/image/how-to-calculate-a-cidr/1.webp
+
+            
