@@ -476,3 +476,13 @@ class - 7
             -> https://mattrickard.com/static/image/how-to-calculate-a-cidr/1.webp
 
             
+class - 8
+==========
+
+    -> Create Custom VPC Based on above Requirement
+
+        -> Private IP address space 
+
+            -> https://www.homenethowto.com/wp-content/uploads/table-private-ip-addr.png
+
+        
