@@ -486,3 +486,61 @@ class - 8
             -> https://www.homenethowto.com/wp-content/uploads/table-private-ip-addr.png
 
         
+class - 9
+==========
+
+    -> Confirmed VPC is working as expected by launching servers in vpc 
+
+    -> Earlier we had our infrastructure setup using Graphical User Interface (GUI) (Beginner) 
+
+        -> Created Myntra VPC (web, application, database) using GUI took 45 mins 
+
+        -> New Req: amazon.in VPC (web, application, database) using GUI took 45 mins 
+
+        -> New Req: zepto VPC (web, application, database) using GUI took 45 mins 
+
+    
+    -> We can also setup infrastructure using Command Line Interface (CLI) (Intermediate)
+
+        -> Created Myntra VPC (web, application, database) using CLI took 45 mins 
+
+        -> New Req: amazon.in VPC (web, application, database) using CLI took 15 mins 
+
+        -> New Req: zepto VPC (web, application, database) using CLI took 15 mins 
+
+    
+    -> We can also setup infrastructure using Scripting (CODE) (Pro)
+
+        -> Created Myntra VPC (web, application, database) using Code took 45 mins 
+
+        -> New Req: amazon.in VPC (web, application, database) using Code took 2 mins 
+
+        -> New Req: zepto VPC (web, application, database) using Code took 2 mins 
+
+
+    -> AWS CLI 
+
+        -> The AWS Command Line Interface (CLI) is a unified "tool" to manage your AWS services.
+
+            ->  Refer https://aws.amazon.com/cli/
+
+        
+        -> AWS Cloud Shell 
+
+            -> AWS CloudShell is a browser-based, pre-authenticated terminal 
+            that lets you securely manage and explore your AWS resources directly 
+            from the AWS Management Console. 
+            
+            -> It eliminates local setup by automatically inheriting your IAM credentials.
+
+            -> Zero Configuration: No need to install the AWS CLI, configure access keys
+
+        
+        -> If we use AWS CLI 
+
+            -> We need to install the AWS CLI and configure IAM access keys & IAM permissions
+
+
+        -> To use AWS CLI Commands, use the following Reference Documents 
+
+            -> https://docs.aws.amazon.com/cli/latest/
