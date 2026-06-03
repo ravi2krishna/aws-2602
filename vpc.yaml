@@ -1,0 +1,129 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: An Web Application VPC Template for crm 
+Resources:
+  crmVPC: 
+    Type: AWS::EC2::VPC
+    Properties: 
+      CidrBlock: 192.168.0.0/16
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      Tags:
+        - Key: Name
+          Value: crm
+
+  crmpublicSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref crmVPC
+      CidrBlock: 192.168.0.0/24
+      AvailabilityZone: "us-west-2a"
+      MapPublicIpOnLaunch: "true"
+      Tags:
+      - Key: Name
+        Value: crm-public-subnet
+
+  
+  crmpriavteSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref crmVPC
+      CidrBlock: 192.168.1.0/24
+      AvailabilityZone: "us-west-2b"
+      MapPublicIpOnLaunch: "false"
+      Tags:
+      - Key: Name
+        Value: crm-private-subnet
+
+  crmInternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+      - Key: Name
+        Value: crm-internet-gateway
+
+  crmAttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId:
+        Ref: crmVPC
+      InternetGatewayId:
+        Ref: crmInternetGateway
+
+  crmPublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId:  
+        Ref: crmVPC
+      Tags:
+      - Key: Name
+        Value: crm-public-RouteTable
+
+  crmPublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: crmAttachGateway
+    Properties:
+       RouteTableId:
+         Ref: crmPublicRouteTable
+       DestinationCidrBlock: 0.0.0.0/0
+       GatewayId:
+         Ref: crmInternetGateway
+  
+  crmPublicSubnetRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId:
+        Ref: crmpublicSubnet
+      RouteTableId:
+        Ref: crmPublicRouteTable
+
+  crmPrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId:  
+        Ref: crmVPC
+      Tags:
+      - Key: Name
+        Value: crm-private-RouteTable
+  
+  crmPrivateSubnetRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId:
+        Ref: crmpriavteSubnet
+      RouteTableId:
+        Ref: crmPrivateRouteTable
+
+  crmPublicNetworkAcl:
+    Type: AWS::EC2::NetworkAcl
+    Properties:
+      VpcId:
+        Ref: crmVPC
+      Tags:
+      - Key: Name
+        Value: crm-public-nacl
+
+  crmPublicNetworkAclAssociation:
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      SubnetId:
+        Ref: crmpublicSubnet
+      NetworkAclId:
+        Ref: crmPublicNetworkAcl
+
+  crmPublicSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow http to client host
+      VpcId: !Ref crmVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+
+  

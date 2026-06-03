@@ -587,3 +587,21 @@ class - 10
         22 https://docs.aws.amazon.com/cli/latest/reference/ec2/create-network-acl-entry.html 
         23 https://docs.aws.amazon.com/cli/latest/reference/ec2/create-security-group.html
         24 https://docs.aws.amazon.com/cli/latest/reference/ec2/authorize-security-group-ingress.html
+
+
+class - 11
+==========
+
+    -> Infrastructure As Code (IaC)
+
+        -> Infrastructure as code is the process of managing and provisioning computer data centers 
+        through machine-readable definition files [CODE].
+
+        -> AWS CloudFormation is an Infrastructure as Code (IaC) service that automates 
+        the provisioning and management of AWS resources. 
+        By defining resources in JSON or YAML templates, you can safely model, test, and deploy 
+        identical infrastructure stacks across multiple AWS accounts and regions.
+
+        -> Cloud Formation Template 
+
+            -> https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html 
