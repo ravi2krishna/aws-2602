@@ -605,3 +605,109 @@ class - 11
         -> Cloud Formation Template 
 
             -> https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html 
+
+
+class - 12
+==========
+
+    -> Server Management is done using service called EC2 
+
+    -> EC2 - Elastic Compute Cloud 
+
+        -> EC2 allows users to rent virtual computers (Servers/Machines) on which 
+        you can run your own computer applications.
+
+    -> Server is a Machine(Laptop) i.e it's referred as EC2 Instance 
+
+
+
+    -> Computer has hardware                        -> Server has Instance Type [cpu + ram]
+        i3 / i5 / 4 GB RAM etc                          t2.micro, t2.medium, t2.large etc 
+
+    -> Computer has hard disk                       -> Instance has EBS (Elastic Block) Storage
+        250 GB / 500 GB / 1 TB                          250 GB / 500 GB / 1 TB                      
+    
+    -> Computer has network                         -> Instance has VPC 
+
+    -> Compute has operating system                 -> Instance has AMI - Amazon Machine Image 
+
+    -> Computer has Authentication                  -> Instance has Authentication
+        username & password                             key pairs (public & private key)
+
+    -> Computer has applications                    -> Instance has applications
+        chrome / notepad etc                            myntra / flipkart / netflix etc 
+
+
+
+    -> Created EC2 Server With SSH & HTTP 
+
+        -> SSH For Admin Login 
+
+        -> HTTP For Customers to access website / web application 
+
+    
+    -> Web Server 
+
+        -> A web server is computer software that accepts requests via HTTP 
+        to distribute web content.
+        
+        -> NGINX Web Server is popular for hosting Web Sites & Web Applications 
+
+        -> Setup Nginx Web Server 
+
+            -> sudo apt update -y 
+
+            -> sudo apt install nginx -y 
+
+        -> Assuming developers completed application coding 
+
+            -> Application Code - https://github.com/ravi2krishna/ecomm.git 
+
+        
+        -> Deploying Application On Nginx Web Server
+
+            -> ls /var/www/html 
+
+            -> sudo cat /var/www/html/index.nginx-debian.html
+
+            -> sudo rm -f /var/www/html/index.nginx-debian.html
+
+            -> ls /var/www/html 
+
+            -> sudo git clone https://github.com/ravi2krishna/ecomm.git /var/www/html 
+
+
+
+    -> Storage 
+
+        -> AWS Provides three popular services for storage 
+
+            -> Elastic Block Storage (EBS Volumes)
+
+            -> Elastic File System (EFS File Storage)
+
+            -> Simple Storage Service (S3 Buckets)
+
+
+        -> Elastic Block Storage (EBS Volumes)
+
+            -> Used for Server Storage (OS(ubuntu), Softwares(nginx))
+            
+            -> It cannot be shared across multiple zones i.e multiple data centers
+
+        
+        -> Elastic File System (EFS File Storage)
+
+            -> Used for file sharing across multiple zones i.e multiple data centers
+
+            -> we cannot use for (OS(ubuntu), Softwares(nginx))
+            performance is very good, so the cost is higher 
+
+        
+        -> Simple Storage Service (S3 Buckets)
+
+            -> Used for internet storage i.e static assets 
+            i.e images, videos, documents etc (huge in size)
+
+            -> so we need low cost storage i.e S3 
+            we cannot use for (OS(ubuntu), Softwares(nginx))
