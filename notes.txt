@@ -711,3 +711,24 @@ class - 12
 
             -> so we need low cost storage i.e S3 
             we cannot use for (OS(ubuntu), Softwares(nginx))
+
+
+class - 13
+==========
+
+    -> Elastic Block Storage (EBS Volumes)
+
+        -> Used for Server Storage (OS(ubuntu), Softwares(nginx))
+
+        -> It cannot be shared across multiple zones i.e multiple data centers
+
+        -> EBS Must have an Root Volume (OS Disk i.e Primary Disk) (Like C drive in your Computer)
+
+        -> EBS Optionally can have an Additional Volumes (Secondary Disk) (Like D drive in your Computer)
+
+        -> Based On the Zone, Volume will be created in the same zone where instance is launched
+
+    
+    -> AMI's 
+
+    -> Snapshots 
