@@ -732,3 +732,42 @@ class - 13
     -> AMI's 
 
     -> Snapshots 
+
+
+class - 14
+==========
+
+    -> EBS - Limitations 
+
+        -> Using EBS we cannot get the data directly across Multiple Availability Zones
+        -> Using EBS we cannot connect to MULTIPLE INSTANCES at same time 
+        -> With EBS Volumes, you can only scale up, but NO SCALING DOWN
+
+    -> Elastic File System (EFS File Storage)
+
+        -> Amazon Elastic File System (EFS) provides a simple, scalable 
+        fully managed elastic NFS file system for AWS EC2  
+
+        -> A Network File System (NFS) is a distributed file system protocol that 
+        allows a client computer to access and manage files over a network 
+        exactly as if they were stored on its local hard drives.
+
+            -> https://edgeone.ai/media/42b9d9ea-578c-4c96-b7f9-346f3c6cf2c0.png
+
+        
+        -> Using EFS we can directly get the data across Multiple Availability Zones
+        
+        -> Using EFS we can connect to multiple instances at the same time
+
+        -> Using EFS we can dynamically, scale up and down 
+
+        -> NOTE: With EFS you need to use NFS Port - 2049, not for instances
+
+        -> NOTE: EFS Cannot be used as Root Volume, only additional.
+
+        -> NOTE: To Us NFS, install NFS utilities
+
+            -> sudo apt-get install nfs-common -y
+      
+
+
