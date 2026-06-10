@@ -770,4 +770,53 @@ class - 14
             -> sudo apt-get install nfs-common -y
       
 
+class - 15
+==========
 
+    -> Simple Storage Service - S3 
+
+        -> https://aws.amazon.com/s3/
+
+        -> Object storage built to retrieve any amount of data from anywhere
+
+        -> S3 is internet storage (Google Drive)
+
+        -> S3 is Low Cost Storage 
+
+        -> S3 Buckets
+
+            -> Data is stored in Buckets, Buckets are the main storage containers of S3.
+
+
+        -> S3 Objects
+
+            -> Objects are the fundamental entities stored in Amazon S3. An Object is a file
+
+
+        -> You can store unlimited objects in a bucket but an object cannot exceed 5 TB
+
+        -> By default, all buckets & objects are private.
+
+        -> S3 provides high availability, Objects are redundantly stored on multiple devices 
+        across multiple facilities ( Multiple AZ's)
+
+
+        -> Storage Classes
+
+            -> A Storage Class represents the classification assigned to each object in S3.
+
+            -> Each storage class has different Storage cost
+            
+            -> https://aws.amazon.com/s3/storage-classes/
+
+        
+        -> S3 Versioning 
+
+            -> S3 versioning is a feature to manage and store versions of an object
+
+            -> S3 versioning protects your data against accidental overrides and deletion.
+
+        
+        -> S3 Static Web hosting
+            
+            -> You can use Amazon S3 to host a static website.
