@@ -820,3 +820,95 @@ class - 15
         -> S3 Static Web hosting
             
             -> You can use Amazon S3 to host a static website.
+
+
+class - 16
+==========
+
+    -> Database Storage 
+
+    -> Before Databases we need to know concepts of Security 
+
+    -> Database Often Hold Sensitive Information
+
+    -> In terms of AWS Security 
+
+        -> Identity Level - IAM Service 
+
+        -> Datacenter Level - Advance Networking concepts
+
+
+    
+    -> AWS IAM 
+
+        -> AWS Identity and Access Management (IAM) is a web service that helps you 
+        "securely Control Access" to AWS resources.
+
+        -> IAM defines exactly who can access which cloud services.
+
+            -> IAM Users 
+            -> IAM Groups 
+            -> IAM Policies
+            -> IAM Roles 
+
+        -> Root User
+
+            -> The user created when you first create your AWS account 
+            is called the "root" user -> your_name@mail.com -> registered with aws account 
+            
+            -> Root User has FULL rights i.e no Restrictions 
+
+            -> Account owner that performs tasks requiring unrestricted access.
+
+        -> IAM Users 
+
+            -> An IAM user is an identity with long-term credentials that is used to 
+            interact with AWS in an account.
+            
+            -> Individual identities (e.g., employees, applications) assigned to a person or program, 
+            equipped with specific security credentials.
+
+            -> User within an account that performs daily tasks.
+
+            -> IAM Users who will have "varying degrees of access" (read/write) to the AWS account.
+
+            -> By default IAM users will not have any permissions.
+
+            -> IAM Users can access AWS Resources Using 
+
+                -> AWS Management Console: Human Based with Browser, Login - username & password 
+
+                -> AWS Programmatic Access: Softwares & Tools Based Login - access & secret key  
+
+
+        -> IAM Policy 
+
+            -> A policy is an object in AWS that defines permissions.
+
+            -> Policies: JSON documents that explicitly define 
+            "Allow" or "Deny" actions for specific AWS resources.
+
+            -> IAM Custom Policy are created based on Custom Requirements 
+
+        -> IAM User Groups
+
+            -> A user group is a collection of IAM users. 
+            Use groups to specify permissions for a collection of users
+        
+            -> Collections of users. 
+            Grouping users makes it easier to assign and manage 
+            permission policies collectively rather than individually.
+
+        
+        -> IAM Roles 
+        
+            -> Temporary, permission-based credentials that can be assumed by trusted entities 
+            (like AWS services, EC2 instances, or federated users) instead of 
+            using static access keys.
+
+
+        -> NOTE: Next will work with IAM Programmatic Access, Custom IAM Policy & IAM Roles 
+
+
+
+
