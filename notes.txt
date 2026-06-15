@@ -911,4 +911,71 @@ class - 16
 
 
 
+class - 17
+==========
+
+    -> IAM Programmatic Access 
+
+    -> IAM Custom Policy 
+
+    -> IAM Roles 
+
+    -> Security For Instances
+
+        -> So when we are talking about "increased security", what we want to focus on is, 
+        placing of EC2 instances that are holding our data in "private subnets".
+
+        -> However this causes some issues
+
+            -> We cannot serve traffic from private instances as there is no route 
+            to the open internet and also we cannot access or ssh into 
+            EC2 instances that are in private subnets
+
+                -> Solution for above is - Bastion Server / Jump Server 
+
+            -> We cannot install/update the software on those Private EC2 instances.
+
+                -> NAT Gateway
+
+
+        -> Bastion Host / Server 
+
+            -> A Bastion Host is an EC2 instance that lives in a public subnet, 
+            and is used as a "gateway" for traffic that is destined for instances 
+            that live in private subnets.
+
+            -> A bastion host acts as a "portal" to access EC2 instances 
+            that are located in a private subnet.
+
+                -> Launched Myntra-DB-Server 
+
+                    -> Private IP - 10.0.46.113
+
+                    -> Public IP - NO 
+
+                    -> For Myntra-DB-Server Allow SSH Only from 10.0.10.99
+
+                -> Launched Myntra-Bastion-Server (Public Subnet)
+
+                    -> Private IP - 10.0.10.99
+
+                    -> Public IP - 29.10.30.34
+
+                    -> Login (SSH) Into Myntra-Bastion-Server
+
+        
+        -> NAT Gateway 
+
+            -> NAT Gateway allows resources in a private subnet to access the internet for
+            (system updates, external database connections, wget calls, OS patch, etc).
+
+                -> https://i.sstatic.net/2ihm3.png
+
+            -> Database Called MySQL We want to install On Myntra-DB-Server 
+
+                -> To Install i need to reach out for internet 
+
+
+
+
 
