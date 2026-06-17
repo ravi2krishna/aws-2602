@@ -976,6 +976,30 @@ class - 17
                 -> To Install i need to reach out for internet 
 
 
+class - 18
+==========
+
+    -> Bastion & NAT Gateway Implementation 
+
+    -> IAAS Perspective 
+
+    -> PAAS Implementation (RDS With Public or Private Access)
+
+    -> RDS 
+
+        -> Managed Relational Database Service
+
+            -> Earlier Server As a Service (EC2)
+            -> Earlier Storage As a Service (S3)
+            -> Now Database As a Service (RDS)
+
+        -> Database connection details
+
+            -> Address Of Database: my-app.cxwgqscew38a.us-east-2.rds.amazonaws.com 
+            -> Port Of Database: 3306
+            -> Username Of Database: admin
+            -> Password Of Database: **************
+
 
 
 
