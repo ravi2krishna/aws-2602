@@ -1001,5 +1001,29 @@ class - 18
             -> Password Of Database: **************
 
 
+class - 19
+==========
 
+    -> Say we need monitoring solution inside AWS, we have Cloudwatch Service 
 
+        -> We need to manually setup in IAAS 
+
+            -> https://assets.nagios.com/training/selfpaced/materials/Nagios_StartUp_Guide.pdf
+
+        -> Cloudwatch - Monitoring As A Service 
+
+            -> Monitor your resources (EC2, RDS, EBS etc)
+
+                -> Metrics - CPU, RAM, HDD etc 
+
+        -> Simple Notification Service(SNS) - Feedback As A Service
+
+            -> If CPU is beyond 90% then SNS will send an alert via EMail 
+
+        -> Install Stress Tool and simulate stress on EC2 Instance 
+
+            -> sudo apt update -y 
+
+            -> sudo apt install stress -y 
+
+            -> stress --cpu 2 --timeout 10000 & 
