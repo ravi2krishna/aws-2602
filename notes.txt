@@ -1027,3 +1027,42 @@ class - 19
             -> sudo apt install stress -y 
 
             -> stress --cpu 2 --timeout 10000 & 
+
+class - 20
+==========
+
+    -> High Availability
+
+        -> High Availability in AWS ensures your applications are continuously 
+        accessible and operational (24 X 7)
+
+            -> Start Using Multiple Availability Zones To Host the Applications 
+
+            -> Use Elastic Load Balancer to route the traffic over 
+            Multiple Availability Zones For Failover 
+
+
+    -> Fault Tolerance 
+
+        -> Fault Tolerance in AWS refers to the ability of a system to continue 
+        operating without interruption in the event of hardware failures 
+
+        -> Fault Tolerance is associated with Self Healing 
+
+        -> Preparing 
+
+            -> Launch Templates [ Hardware ]
+
+            -> Custom AMI's [ Software ]
+
+    
+    -> Scalability 
+
+        -> Scalability in AWS refers to the ability of a system to handle 
+        increasing workloads and accommodate according to growing demands.
+
+        -> Based on load automatically
+
+            -> Scale Up Resources (Scale Up)
+
+            -> Scale Down Resources (Scale Up)
