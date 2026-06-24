@@ -1066,3 +1066,11 @@ class - 20
             -> Scale Up Resources (Scale Up)
 
             -> Scale Down Resources (Scale Up)
+
+
+class - 21
+==========
+
+    -> Implementation Of High Availability, Fault Tolerance & Scalability
+
+    
